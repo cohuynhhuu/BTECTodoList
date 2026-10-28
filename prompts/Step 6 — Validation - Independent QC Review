@@ -1,0 +1,31 @@
+Act as the independent QC Agent.
+
+Read:
+- `specs/02-requirements.md`
+- `specs/03-solution-design.md`
+- `specs/05-implementation-report.md`
+- Applicable QC instructions and skills
+
+Inspect the actual source code. Independently assess whether the implementation meets every approved acceptance criterion.
+
+Check task creation, validation, completion, LocalStorage persistence, reload behavior, error handling, safe rendering, and regression risks.
+
+Execute available tests. If browser access is unavailable, distinguish source-code inspection from actual browser verification.
+
+OUTPUT:
+Create or update `specs/06-qc-report.md` containing:
+- References to requirements and implementation report
+- A criterion-by-criterion result: PASS, FAIL, or NOT VERIFIED
+- Evidence for every result
+- Tests executed and actual outcomes
+- Defects, severity, reproduction steps, and affected criteria
+- Recommended remediation
+- Release recommendation: ACCEPT, ACCEPT WITH KNOWN LIMITATIONS, or REJECT
+
+Rules:
+- Do not modify application source code.
+- Do not assume the DEV report is correct.
+- Do not mark a criterion PASS without sufficient evidence.
+- Do not claim browser testing when only static inspection was performed.
+
+Save the QC report and stop for human review.

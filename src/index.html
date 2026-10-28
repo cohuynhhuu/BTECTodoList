@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTECTodoList</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header><p class="eyebrow">AI-DLC WORKSHOP</p><h1>BTECTodoList</h1>
+      <p>Quản lý công việc học tập</p></header>
+    <p class="starter-note">Bộ khung demo đã sẵn sàng. Dùng Copilot để triển khai từng tính năng.</p>
+    <form id="task-form">
+      <label for="task-title">Tên công việc</label>
+      <div class="input-row">
+        <input id="task-title" name="title" type="text" autocomplete="off" placeholder="Ví dụ: Hoàn thành bài Java" disabled>
+        <button type="submit" disabled>Thêm</button>
+      </div>
+    </form>
+    <p id="feedback" role="status" aria-live="polite"></p>
+    <section aria-labelledby="list-heading">
+      <h2 id="list-heading">Danh sách công việc</h2>
+      <p id="empty-state">Chưa có công việc.</p>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

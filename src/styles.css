@@ -1,0 +1,18 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #172033; background: #f3f6fb; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 40px 20px; }
+.app { max-width: 720px; margin: auto; padding: 32px; background: white; border-radius: 18px; box-shadow: 0 10px 40px #17203312; }
+h1 { margin: 4px 0; font-size: 36px; }
+h2 { font-size: 20px; margin-top: 28px; }
+.eyebrow { color: #5362cc; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+.starter-note { padding: 12px; background: #eef2ff; border-radius: 8px; line-height: 1.6; }
+label { display: block; margin: 20px 0 8px; font-weight: 600; }
+.input-row { display: flex; gap: 10px; }
+input { flex: 1; min-width: 0; padding: 12px; border: 1px solid #bcc7da; border-radius: 8px; font: inherit; }
+button { padding: 12px 20px; border: none; border-radius: 8px; background: #4054d6; color: white; font: inherit; cursor: pointer; }
+button:disabled, input:disabled { opacity: .55; cursor: not-allowed; }
+#feedback { min-height: 24px; }
+#task-list { list-style: none; padding: 0; }
+:focus-visible { outline: 3px solid #fc912c; outline-offset: 3px; }
+@media (max-width: 480px) { .app { padding: 20px; } .input-row { flex-direction: column; } }
+/* TODO: Copilot adds task row and completed-state styles during implementation. */
